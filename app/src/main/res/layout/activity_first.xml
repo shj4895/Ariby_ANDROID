@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+    <VideoView
+        android:id="@+id/vdo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ariby"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="60dp"
+            android:lineSpacingMultiplier="-5"
+            android:textSize="80sp"
+            android:textFontWeight="500"
+            android:fontFamily="@font/cinzelbold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:text="언제 어디서나 달릴 수 있는 자전거"
+            android:fontFamily="@font/nanumgothicregular"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_new_user"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="120dp"
+            android:text="새 사용자"
+            android:textSize="17sp"
+            android:background="@drawable/activity_start_firstbutton"
+            android:fontFamily="@font/nanumgothicregular"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_old_user"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="50dp"
+            android:text="기존 사용자"
+            android:textSize="17sp"
+            android:background="@drawable/activity_start_oldbutton"
+            android:fontFamily="@font/nanumgothicregular"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
+</layout>
